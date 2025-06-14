@@ -1,0 +1,38 @@
+{
+  "ntfy": {
+    "description": "ntfy客户端配置",
+    "type": "object",
+    "items": {
+      "receiver": {
+        "description": "被推送用户ids,逗号分割，如果为空则推给自己",
+        "type": "string",
+        "default": "wxid_xxxxx,wxid_yyyyy"
+      },
+      "sender": {
+        "description": "可推送消息的用户ids,逗号分割",
+        "type": "string",
+        "default": "wxid_xxxxx,wxid_yyyyy"
+      },
+      "ntfy_host": {
+        "description": "ntfy服务器地址",
+        "type": "string",
+        "default": "https://ntfy.myhost.com"
+      },
+      "token": {
+        "description": "token,如果ntfy服务器需要验证",
+        "type": "string",
+        "default": "test"
+      },
+      "publish_topic": {
+        "description": "发布消息的主题,多个主题用逗号分割",
+        "type": "string",
+        "default": "test"
+      },
+      "subscribe_topic": {
+        "description": "订阅消息的主题,多个主题用逗号分割",
+        "type": "string",
+        "default": "test"
+      }
+    }
+  }
+}
