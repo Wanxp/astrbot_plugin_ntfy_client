@@ -1,7 +1,8 @@
 import time
 from datetime import datetime
 from python_ntfy import NtfyClient
-from threading import th
+import sched, time
+
 
 from astrbot.api.event import filter, AstrMessageEvent
 from astrbot.api.star import Context, Star, register
